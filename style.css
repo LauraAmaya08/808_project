@@ -26,6 +26,8 @@ body{
     margin: 0;
     line-height: 1.5;
     font-size: 16px ;
+    font-weight: 400;
+    background-color: #f3f2f1;
 }
 
 a{
@@ -198,7 +200,6 @@ header,section,footer{
 }
 
 
-
 @keyframes fadeInTop{
     0%{
         transform: translateY(-50px) ;
@@ -207,4 +208,77 @@ header,section,footer{
         opacity: 1;
         transform: translateY(0px) ;
     }
+}
+
+
+/*pagina historia*/
+
+.historia .contenedor{
+    margin-top: 20px ;
+    padding: 80px 0 0;
+}
+
+.historia .slide{
+    background-position:center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.historia .slide:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.titulo{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo h2{
+    color: #ffff;
+    font-family: 'Abril Fatface', serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0;
+    animation: fadeInTop 1s ease forwards;
+}
+
+.texto{
+    flex: 0 0 100%;
+    max-width: 80%;
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    animation: fadeInTop 0.5s ease forwards;
+}
+
+.parrafo{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 10px;
+    color: #f3f2f1;
+}
+
+.texto img{
+    max-width: 280px;
+    width: 100%;
+    padding: 0 5px;
 }
