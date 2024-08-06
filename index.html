@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feliz Aniversario Chiquito!</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--Inicio header-->
     <header class="encabezado">
-        <div class="contenedor">
-            <div class="fila">
-                <div class="logo">
-                    <a href="index.html">L & J</a>
-                </div>
-                <nav class="navegador">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Nuestra Historia</a></li>
-                        <li><a href="#">Experiencias nuevas</a></li>
-                        <li><a href="#">Galería</a></li>
-                        <li><a href="#">Mírame!</a></li>
-                        <li><a href="#">Para Juanito</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="contenedor">
+        <div class="fila">
+          <div class="logo">
+            <a href="index.html">L & J</a>
+          </div>
+          <nav class="navegador">
+            <ul>
+              <li><a href="#" class="active">Inicio</a></li>
+              <li><a href="#">Nuestra Historia</a></li>
+              <li><a href="#">Experiencias nuevas</a></li>
+              <li><a href="#">Galería</a></li>
+              <li><a href="#">Mírame!</a></li>
+              <li><a href="#">Para Juanito</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <!--Final header-->
     <!--Inicio home-->
     <section class="inicio-section">
-        <div class="slide">
-            <div class="fila"></div>
+      <!--Empieza el slide-->
+      <div
+        class="slide active"
+        style="background-image: url('img/IMG-20231001-WA0016.jpg')"
+      >
+        <div class="contenedor">
+          <div class="fila">
+            <div class="inicio-contenido">
+              <p>¡Hola Principito!</p>
+              <h1>¿Listo para revisar nuestro último año?</h1>
+              <span>08 Sep 2024</span>
+            </div>
+          </div>
         </div>
+      </div>
+      <!--termina el slide-->
+      <!--Empieza el slide-->
+      <div
+        class="slide"
+        style="background-image: url('img/IMG-20231122-WA0110.jpg')"
+      >
+        <div class="contenedor">
+          <div class="fila">
+            <div class="inicio-contenido">
+              <p>¡Hola Principito!</p>
+              <h1>¿Listo para revisar nuestro último año?</h1>
+              <span>08 Sep 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--termina el slide-->
+      <!--Empieza el slide-->
+      <div class="slide" style="background-image: url('img/1000007678.jpg')">
+        <div class="contenedor">
+          <div class="fila">
+            <div class="inicio-contenido">
+              <p>¡Hola Principito!</p>
+              <h1>¿Listo para revisar nuestro último año?</h1>
+              <span>08 Sep 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--termina el slide-->
     </section>
     <!--Fin home-->
-</body>
+    <!--Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
