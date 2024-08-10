@@ -58,7 +58,8 @@ footer {
 
 /*Inicio*/
 
-.inicio-section {
+.inicio-section,
+.paraEl-section {
   min-height: 100vh;
   position: relative;
 }
@@ -396,4 +397,58 @@ footer {
     margin: 40px ;
     padding-top: 50px;
     color: #1d1919bd;
+}
+
+/*Para el*/
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.video-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.containerVideo::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+  
+.content p{
+  width: 50%;
+}
+
+.musica{
+  margin: 0;
+  padding: 0;
 }
