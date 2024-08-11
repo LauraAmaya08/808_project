@@ -15,3 +15,20 @@ $(window).on("load", function () {
   slideMostrar();
 });
 
+let cont = 0;
+
+const words = document.querySelectorAll(".palabraCambia");
+let index = 0;
+
+const cambiarPalabra = () => {
+  words.forEach((word, i) => {
+      word.classList.toggle('active', i === index);
+  });
+  index = (index + 1) % words.length;
+};
+
+setInterval(cambiarPalabra,2000);
+
+cambiarPalabra()
+
+console.log(words)
