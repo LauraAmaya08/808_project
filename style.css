@@ -539,22 +539,18 @@ transition: color 0.5s ease;
   justify-content: center;
 }
 
-/* Styles for the video container */
 .video-portada {
   flex: 1;
   max-width: 100%;
 }
 
-
-/* Styles for the paragraph container */
 .parrafo-mirame {
-  flex: 1; /* Allow the paragraph container to take up equal space */
+  flex: 1; 
   display: flex;
-  align-items: center; /* Center the content vertically */
-  text-align: justify; /* Justify the text */
+  align-items: center; 
+  text-align: justify; 
 }
 
-/* Styles for paragraph text */
 .parrafo-mirame p {
-  margin: 0; /* Remove default margin around the paragraph */
+  margin: 0; 
 }
