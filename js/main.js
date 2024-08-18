@@ -32,3 +32,8 @@ setInterval(cambiarPalabra,2000);
 cambiarPalabra()
 
 console.log(words)
+
+document.getElementById('reproducir').addEventListener('click', function() {
+
+});
+
