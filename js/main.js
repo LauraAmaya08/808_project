@@ -34,6 +34,9 @@ cambiarPalabra()
 console.log(words)
 
 document.getElementById('reproducir').addEventListener('click', function() {
-
+  const video = document.querySelector(".video")
+  video.setAttribute("controls","")
+  video.play()
 });
+
 
