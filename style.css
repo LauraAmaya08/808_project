@@ -587,3 +587,49 @@ transition: color 0.5s ease;
   cursor: pointer;
   color: white; 
 }
+
+@media (max-width: 425px) {
+  .mirame-section{
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 85vh;
+    margin-top: 190px;
+    gap: 10px;
+  }
+  .parrafo-mirame{
+    width: 100%;
+    text-align: center;
+    padding: 0 
+  }
+  .content p{
+    width: 100%;
+  }
+  .fraseCambiante{
+    font-size: 1em;
+    margin-top: 30px;
+  }
+  .titulo{
+    padding-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .content{
+    position: absolute;
+    margin-top: 50px;
+  }
+
+  .paraEl-section{
+    overflow: hidden;
+  }
+
+  .historia{
+    margin-top: 100px
+  }
+
+  .historia .titulo{
+    font-size: 20px;
+    padding: 0 10px 30px 10px;
+    color: red;
+    font-weight: bold;
+  }
+}
